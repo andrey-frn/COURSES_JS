@@ -12,17 +12,11 @@ const products = [
 ];
 
 const calculateTotalPrice = function (allProdcuts, productName) {
-  let totalPrice = 1;
   for (const itemProducts of allProdcuts) {
     if (itemProducts.name === productName) {
-      for (const key in itemProducts) {
-        if (!isNaN(itemProducts[key])) {
-          totalPrice *= itemProducts[key];
-        }
-      }
+      return itemProducts.price * itemProducts.quantity;
     }
   }
-    return totalPrice;
 };
 
 // // /*
@@ -31,4 +25,3 @@ const calculateTotalPrice = function (allProdcuts, productName) {
 console.log(calculateTotalPrice(products, "Радар")); // 5200
 
 console.log(calculateTotalPrice(products, "Дроид")); // 2800
-
