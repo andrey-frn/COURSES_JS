@@ -4,7 +4,6 @@ const inventory = {
   items: ['Knife', 'Gas mask'],
   add(itemName) {
     console.log(`Adding ${itemName} to inventory`);
-
     this.items.push(itemName);
   },
   remove(itemName) {
@@ -16,8 +15,7 @@ const inventory = {
 
 const invokeInventoryAction = function(itemName, action) {
   console.log(`Invoking action on ${itemName}`);
-  const actionNew = action.bind(inventory)
-  actionNew(itemName);
+  action.call(inventory, itemName);
 };
 
 invokeInventoryAction('Medkit', inventory.add);
