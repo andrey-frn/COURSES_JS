@@ -18,8 +18,8 @@ addItem(item) {
   this.items.push(item);
 }
 removeItem(item) {
-  if (items.includes(item)) {
-      return items.splice(items.indexOf(item), 1);
+  if (this.items.includes(item)) {
+      return this.items.splice(this.items.indexOf(item), 1);
   }
 }
 }
