@@ -1,4 +1,3 @@
-
 // Напиши скрипт который, при наборе текста в инпуте input#name-input
 // (событие input), подставляет его текущее значение в span#name-output.
 //  Если инпут пустой, в спане должна отображаться строка 'незнакомец'.
@@ -10,9 +9,11 @@ const inputRef = document.querySelector("#name-input");
 const spanRef = document.querySelector("#name-output");
 
 const spanInputFn = (event) => {
-      event.target.value !== ''
-    ? (spanRef.textContent = event.target.value)
-    : (spanRef.textContent = "незнакомец");
+  if (event.target.value !== "") {
+    spanRef.textContent = event.target.value;
+  } else {
+    spanRef.textContent = "незнакомец";
+  }
 };
 
 inputRef.addEventListener("input", spanInputFn);
