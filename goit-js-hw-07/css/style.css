@@ -1,0 +1,52 @@
+* {
+  margin: 10px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}
+ul,
+ol {
+  list-style: none;
+}
+.btn {
+  width: 300px;
+  height: 60px;
+  background-color: aqua;
+  text-align: center;
+  font-size: 24px;
+  margin: 20px;
+}
+#value {
+  font-size: 24px;
+  margin: 20px;
+}
+.gallary-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.list-item {
+  width: 100%;
+  height: auto;
+}
+
+/* task-6 */
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+
+/* task-7 */
+#font-size-control {
+  display: block;
+  margin: 20px;
+}
