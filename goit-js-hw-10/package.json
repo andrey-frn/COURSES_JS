@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/luxplanjay/webpack-starter-kit/issues"
   },
-  "homepage": "https://andrey-frn.github.io/COURSES_JS/goit-js-hw-10",
+  "homepage": "https://andrey-frn.github.io/COURSES_JS",
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
